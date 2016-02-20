@@ -1,0 +1,149 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AddChildTopic	topic.cc	/^Topic* TopicUtils::AddChildTopic(Topic* parent_topic) {$/;"	f	class:hlda::TopicUtils
+AddPathToDocument	document.cc	/^  	void DocumentTopicUtils::AddPathToDocument($/;"	f	class:hlda::DocumentTopicUtils
+AddTopic	topic.cc	/^Topic* TopicUtils::AddTopic(Topic* parent_topic) {$/;"	f	class:hlda::TopicUtils
+DOCUMENT_H_	document.h	/^#define DOCUMENT_H_$/;"	d
+Document	document.cc	/^ 	Document::Document(const Document& from)$/;"	f	class:hlda::Document
+Document	document.h	/^	class Document {$/;"	c	namespace:hlda
+DocumentTopicUtils	document.h	/^	class DocumentTopicUtils {$/;"	c	namespace:hlda
+DocumentTreeUtils	document.h	/^	class DocumentTreeUtils {$/;"	c	namespace:hlda
+DocumentUtils	document.h	/^	class DocumentUtils {$/;"	c	namespace:hlda
+ETA_STDEV	tree.cc	/^#define ETA_STDEV /;"	d	file:
+EtaScore	topic.cc	/^double TopicUtils::EtaScore(Topic* topic) {$/;"	f	class:hlda::TopicUtils
+GAM_STDEV	tree.cc	/^#define GAM_STDEV /;"	d	file:
+GammaScore	topic.cc	/^double TopicUtils::GammaScore(Topic* topic) {$/;"	f	class:hlda::TopicUtils
+InitRandomNumberGen	utils.cc	/^	void Utils::InitRandomNumberGen(long rng_seed) {$/;"	f	class:hlda::Utils
+LogGammaRatio	document.cc	/^  	double DocumentTopicUtils::LogGammaRatio($/;"	f	class:hlda::DocumentTopicUtils
+LogSum	utils.cc	/^	double Utils::LogSum(double log_a, double log_b) {$/;"	f	class:hlda::Utils
+Operator	document.cc	/^	Word& Word::Operator =(const Word& from) {$/;"	m	class:hlda::Word	file:
+PermuteWords	document.cc	/^ 	void DocumentUtils::PermuteWords(Document* document) {$/;"	f	class:hlda::DocumentUtils
+Prune	topic.cc	/^void TopicUtils::Prune(Topic* topic) {$/;"	f	class:hlda::TopicUtils
+RANDNUMGEN	utils.cc	/^	gsl_rng* Utils::RANDNUMGEN = NULL;$/;"	m	class:hlda::Utils	file:
+REP_NO_ETA	tree.cc	/^#define REP_NO_ETA /;"	d	file:
+RandGauss	utils.cc	/^	double Utils::RandGauss(double mean, double stdev) {$/;"	f	class:hlda::Utils
+RandNo	utils.cc	/^	double Utils::RandNo() {$/;"	f	class:hlda::Utils
+Remove	topic.cc	/^void TopicUtils::Remove(Topic* topic) {$/;"	f	class:hlda::TopicUtils
+RemoveDocumentFromPath	document.cc	/^  	void DocumentTreeUtils::RemoveDocumentFromPath($/;"	f	class:hlda::DocumentTreeUtils
+SampleDfs	topic.cc	/^Topic* TopicUtils::SampleDfs($/;"	f	class:hlda::TopicUtils
+SampleDocumentPath	document.cc	/^ 	void DocumentTreeUtils::SampleDocumentPath($/;"	f	class:hlda::DocumentTreeUtils
+SampleFromLogPr	utils.cc	/^	int Utils::SampleFromLogPr(const vector<double>& log_pr) {$/;"	f	class:hlda::Utils
+SampleLevels	document.cc	/^ 	void DocumentUtils::SampleLevels($/;"	f	class:hlda::DocumentUtils
+SampleTopic	topic.cc	/^Topic* TopicUtils::SampleTopic(Topic* root, double log_sum) {$/;"	f	class:hlda::TopicUtils
+Shuffle	utils.cc	/^	void Utils::Shuffle(gsl_permutation* permutation, int size) {$/;"	f	class:hlda::Utils
+Sum	utils.cc	/^	double Utils::Sum(const vector<double>& v) {$/;"	f	class:hlda::Utils
+TOPIC_H_	topic.h	/^#define TOPIC_H_$/;"	d
+TREE_H_	tree.h	/^#define TREE_H_$/;"	d
+Topic	topic.cc	/^Topic::Topic(const Topic& from) {$/;"	f	class:hlda::Topic
+Topic	topic.cc	/^Topic::Topic(const Topic& from, Topic* parent, Tree* tree) $/;"	f	class:hlda::Topic
+Topic	topic.cc	/^Topic::Topic(int level, Topic* parent, Tree* tree, int corpus_word_no)$/;"	f	class:hlda::Topic
+Topic	topic.h	/^class Topic {$/;"	c	namespace:hlda
+TopicUtils	topic.h	/^class TopicUtils {$/;"	c	namespace:hlda
+Tree	tree.cc	/^Tree::Tree()$/;"	f	class:hlda::Tree
+Tree	tree.cc	/^Tree::Tree(int depth,$/;"	f	class:hlda::Tree
+Tree	tree.h	/^class Tree {$/;"	c	namespace:hlda
+TreeUtils	tree.h	/^class TreeUtils {$/;"	c
+UTILS_H_	utils.h	/^#define UTILS_H_$/;"	d
+UpdateTreeFromDocument	document.cc	/^  	void DocumentTreeUtils::UpdateTreeFromDocument($/;"	f	class:hlda::DocumentTreeUtils
+Utils	utils.h	/^class Utils {$/;"	c	namespace:hlda
+Word	document.cc	/^	Word::Word(const Word& from)$/;"	f	class:hlda::Word
+Word	document.cc	/^	Word::Word(int id, int count, int level)$/;"	f	class:hlda::Word
+Word	document.h	/^	class Word {$/;"	c	namespace:hlda
+addChild	topic.h	/^  void addChild(Topic* child) { children_.push_back(child); }$/;"	f	class:hlda::Topic
+addWord	document.cc	/^ 	void Document::addWord($/;"	f	class:hlda::Document
+children_	topic.h	/^  vector<Topic*> children_;$/;"	m	class:hlda::Topic
+computeLogPrLevel	document.cc	/^ 	void Document::computeLogPrLevel($/;"	f	class:hlda::Document
+corpus_word_no_	topic.h	/^  int corpus_word_no_;$/;"	m	class:hlda::Topic
+count_	document.h	/^		int count_;$/;"	m	class:hlda::Word
+depth_	document.cc	/^		  depth_(depth) {$/;"	f	namespace:hlda
+depth_	document.h	/^		int depth_;$/;"	m	class:hlda::Document
+depth_	tree.h	/^  	int depth_;$/;"	m	namespace:hlda
+document_no_	topic.h	/^  int document_no_;$/;"	m	class:hlda::Topic
+eta_	tree.h	/^  	vector<double> eta_;$/;"	m	namespace:hlda
+getChildren	topic.h	/^  int getChildren() const { return children_.size(); }$/;"	f	class:hlda::Topic
+getCorpusWordNo	topic.h	/^  int getCorpusWordNo() const { return corpus_word_no_; }$/;"	f	class:hlda::Topic
+getCstWordVector	document.h	/^		const vector<Word>& getCstWordVector() const { return words_; }$/;"	f	class:hlda::Document
+getDepth	tree.h	/^	int getDepth() const { return depth_; }$/;"	f	class:hlda::Tree
+getDocumentNo	topic.h	/^  int getDocumentNo() const { return document_no_; }$/;"	f	class:hlda::Topic
+getEta	tree.h	/^	double getEta(int i) const { return eta_[i]; }$/;"	f	class:hlda::Tree
+getId	document.h	/^		int getId() const { return id_; }$/;"	f	class:hlda::Document
+getId	document.h	/^		int getId() const { return id_; }$/;"	f	class:hlda::Word
+getLevel	document.h	/^		int getLevel() const { return level_; }$/;"	f	class:hlda::Word
+getLevel	topic.h	/^  int getLevel() const { return level_; }$/;"	f	class:hlda::Topic
+getLevelCounts	document.h	/^		int getLevelCounts(int level) const { return level_counts_[level]; }$/;"	f	class:hlda::Document
+getLgamWordCountEta	topic.h	/^  double getLgamWordCountEta(int word_id) const {$/;"	f	class:hlda::Topic
+getLogPrLevel	document.h	/^		double getLogPrLevel(int depth) const { return log_pr_level_[depth]; }$/;"	f	class:hlda::Document
+getLogPrWord	topic.h	/^  double getLogPrWord(int word_id) const { return log_pr_word_[word_id]; }$/;"	f	class:hlda::Topic
+getMutableChild	topic.h	/^  Topic* getMutableChild(int i) { return children_.at(i); }$/;"	f	class:hlda::Topic
+getMutableParent	topic.h	/^  Topic* getMutableParent() { return parent_; }$/;"	f	class:hlda::Topic
+getMutablePathTopic	document.h	/^		Topic* getMutablePathTopic(int level) const { return path_[level]; }$/;"	f	class:hlda::Document
+getMutableRootTopic	tree.h	/^	Topic* getMutableRootTopic() { return root_topic_; }$/;"	f	class:hlda::Tree
+getMutableTree	topic.h	/^  Tree* getMutableTree() { return tree_; }$/;"	f	class:hlda::Topic
+getMutableWord	document.h	/^		Word* getMutableWord(int i) { return &words_.at(i); }$/;"	f	class:hlda::Document
+getNextId	tree.h	/^	int getNextId() const { return next_id_; }$/;"	f	class:hlda::Tree
+getProbability	topic.h	/^  double getProbability() const { return probability_; }$/;"	f	class:hlda::Topic
+getScaling	topic.h	/^  double getScaling() const { return scaling_; }$/;"	f	class:hlda::Topic
+getScalingScale	tree.h	/^	double getScalingScale() const { return scaling_scale_; }$/;"	f	namespace:hlda
+getScalingShape	tree.h	/^	double getScalingShape() const { return scaling_shape_; }$/;"	f	namespace:hlda
+getScore	document.h	/^		double getScore() const { return score_; }$/;"	f	class:hlda::Document
+getSumLevelCounts	document.cc	/^ 	int Document::getSumLevelCounts(int depth) const {$/;"	f	class:hlda::Document
+getTopicWordNo	topic.h	/^  int getTopicWordNo() const { return topic_word_no_; }$/;"	f	class:hlda::Topic
+getTree	topic.h	/^  const Tree& getTree() const { return *tree_; }$/;"	f	class:hlda::Topic
+getWordCount	topic.h	/^  int getWordCount(int word_id) const { return word_counts_[word_id]; }$/;"	f	class:hlda::Topic
+getWords	document.h	/^		int getWords() const { return words_.size(); }$/;"	f	class:hlda::Document
+hlda	document.cc	/^namespace hlda {$/;"	n	file:
+hlda	document.h	/^namespace hlda {$/;"	n
+hlda	topic.cc	/^namespace hlda {$/;"	n	file:
+hlda	topic.h	/^namespace hlda {$/;"	n
+hlda	tree.cc	/^namespace hlda {$/;"	n	file:
+hlda	tree.h	/^namespace hlda {$/;"	n
+hlda	utils.cc	/^namespace hlda {$/;"	n	file:
+hlda	utils.h	/^namespace hlda {$/;"	n
+id_	document.h	/^		int id_;$/;"	m	class:hlda::Document
+id_	document.h	/^		int id_;$/;"	m	class:hlda::Word
+id_	topic.h	/^  int id_;$/;"	m	class:hlda::Topic
+incDocumentNo	topic.h	/^  void incDocumentNo(int val) { document_no_ += val; }$/;"	f	class:hlda::Topic
+incNextId	tree.h	/^	void incNextId(int val) { next_id_ += val; }$/;"	f	class:hlda::Tree
+initLevelCounts	document.cc	/^ 	void Document::initLevelCounts(int depth) {$/;"	f	class:hlda::Document
+level_	document.h	/^		int level_;$/;"	m	class:hlda::Word
+level_	topic.h	/^  int level_;$/;"	m	class:hlda::Topic
+level_counts_	document.h	/^		int* level_counts_;$/;"	m	class:hlda::Document
+lgam_word_count_eta_	topic.h	/^  double* lgam_word_count_eta_;$/;"	m	class:hlda::Topic
+log_pr_level_	document.h	/^		double* log_pr_level_;$/;"	m	class:hlda::Document
+log_pr_word_	topic.h	/^  double* log_pr_word_;$/;"	m	class:hlda::Topic
+next_id_	tree.h	/^  	int next_id_;$/;"	m	namespace:hlda
+operator =	document.cc	/^ 	Document& Document::operator =(const Docuemnt& from) {$/;"	f	class:hlda::Document
+operator =	topic.cc	/^void Topic::operator =(const Topic& from) {$/;"	f	class:hlda::Topic
+parent_	topic.h	/^  Topic* parent_;$/;"	m	class:hlda::Topic
+path_	document.h	/^		vector<Topic*> path_;$/;"	m	class:hlda::Document
+probabilitiesDfs	document.cc	/^  	void DocumentTopicUtils::probabilitiesDfs($/;"	f	class:hlda::DocumentTopicUtils
+probability_	topic.h	/^  double probability_;$/;"	m	class:hlda::Topic
+removeLastChild	topic.h	/^  void removeLastChild() { children_.pop_back(); }$/;"	f	class:hlda::Topic
+root_topic_	tree.h	/^  	Topic* root_topic_;$/;"	m	namespace:hlda
+scaling_	topic.h	/^  double scaling_;$/;"	m	class:hlda::Topic
+scaling_scale_	tree.h	/^  	double scaling_scale_;$/;"	m	namespace:hlda
+score_	document.h	/^		double score_;$/;"	m	class:hlda::Document
+setChild	topic.h	/^  void setChild(int i, Topic* child) { children_.at(i) = child; }$/;"	f	class:hlda::Topic
+setEta	tree.h	/^	void setEta(int i, double value) { eta[i]} = value; }$/;"	f	class:hlda::Tree
+setId	document.h	/^		void setId(int id) { id_ = id; }$/;"	f	class:hlda::Word
+setLevel	document.h	/^		void setLevel(int level) { level_ = level; }$/;"	f	class:hlda::Word
+setParent	topic.h	/^  void setParent(Topic* parent) { parent_ = parent; }$/;"	f	class:hlda::Topic
+setPathTopic	document.h	/^		void setPathTopic(int level, Topic* topic) { path_[level] = topic; }$/;"	f	class:hlda::Document
+setProbability	topic.h	/^  void setProbability(double probability) { probability_ = probability; }$/;"	f	class:hlda::Topic
+setRootTopic	tree.h	/^	void setRootTopic(Topic* root_topic) { root_topic_ = root_topic; }$/;"	f	class:hlda::Tree
+setScore	document.h	/^		void setScore(double score) { score_ = score; }$/;"	f	class:hlda::Document
+setWords	document.h	/^		void setWords(const vector<Word>& words) { words_ = words; }$/;"	f	class:hlda::Document
+setWords	document.h	/^		void setWords(int i, const Word& word) { words_.at(i) = word; }$/;"	f	class:hlda::Document
+topic_word_no_	topic.h	/^  int topic_word_no_;$/;"	m	class:hlda::Topic
+tree_	topic.h	/^  Tree* tree_;$/;"	m	class:hlda::Topic
+updateLevel	document.h	/^		void updateLevel(int value) { level_ += value; }$/;"	f	class:hlda::Word
+updateLevelCounts	document.h	/^		void updateLevelCounts(int level, int value) {$/;"	f	class:hlda::Document
+updateWordCount	topic.cc	/^void Topic::updateWordCount(int word_id, int update) {$/;"	f	class:hlda::Topic
+word_counts_	topic.h	/^  int* word_counts_;$/;"	m	class:hlda::Topic
+words_	document.h	/^		vector<Word> words_;$/;"	m	class:hlda::Document
+~Document	document.cc	/^ 	Document::~Document() {$/;"	f	class:hlda::Document
+~Topic	topic.cc	/^Topic::~Topic() {$/;"	f	class:hlda::Topic
