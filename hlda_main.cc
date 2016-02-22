@@ -11,7 +11,7 @@ int main(int argc, char** argv) {
 	if (argc == 3) {
 		// The random number generator seed.
 		// For testing an example seed is: t = 1147530551;
-		log rng_seed;
+		long rng_seed;
 		(void)time(&rng_seed);
 
 		std::string filename_corpus = argv[1];
