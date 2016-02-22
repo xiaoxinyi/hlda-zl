@@ -101,6 +101,37 @@ class GibbsState {
 
 ｝;
 
+// This class provides functionality for reading input for the
+// Gibbs state, initializing the Gibbs state,
+// and performing iterations of the Gibbs state
+class GibbsSampler {
+  public:
+  	// Read input corpus and state parameters from file.
+  	static void ReadGibbsInput(
+  		GibbsState* gibbs_state,
+  		const std::string& filename_corpus,
+  		const std::string& filename_settings);
+
+  	// Iintialize Gibbs state.
+  	static void InitGibbsState(
+  		GibbsState* gibbs_state);
+
+  	// Initialize Gibbs state - repeat the initialization REP_NO,
+  	// by calling InitGibbsState.
+  	// Keep the Gibbs state with the best score.
+  	// rng_seed is the random number generator seed.
+  	static GibbsState* InitGibbsStateRep(
+      const std::string& filename_corpus,
+      const std::string& filename_settings,
+      long rng_seed);
+
+  // Iterations of the Gibbs state.
+  // Sample the document path and the word levels in the tree.
+  // Sample hyperparameters: Eta, GEM mean and scale.
+  static void IterateGibbsState(GibbsState* gibbs_state);
+};
+
+
 }  // namespace hlda
 
 #endif  // GIBBS_H_
